@@ -21,7 +21,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-sans font-bold text-primary">CCEW Extracurricular</h1>
+            <h1 className="text-xl font-sans font-bold text-primary">CCOEW Extracurricular</h1>
           </div>
 
           {/* Desktop Navigation */}
