@@ -31,7 +31,7 @@ export function EventsCalendar() {
       location: "Computer Lab",
       category: "Competition",
       organizer: "Coders Club",
-      color: "secondary",
+      color: "primary",
     },
     {
       title: "Blood Donation Camp",
@@ -58,7 +58,7 @@ export function EventsCalendar() {
       location: "Conference Hall",
       category: "Panel Discussion",
       organizer: "SWE",
-      color: "secondary",
+      color: "primary",
     },
   ]
 

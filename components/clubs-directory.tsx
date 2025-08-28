@@ -34,7 +34,7 @@ export function ClubsDirectory() {
           icon: <Cpu className="h-6 w-6" />,
           members: "95+",
           activities: ["Technical Talks", "Conferences", "Paper Presentations", "Electronics Projects"],
-          color: "secondary",
+          color: "primary",
         },
         {
           name: "Material Advantage Student's Chapter",
@@ -60,7 +60,7 @@ export function ClubsDirectory() {
           icon: <Globe className="h-6 w-6" />,
           members: "110+",
           activities: ["Networking Events", "Paper Publications", "International Conferences", "Leadership Programs"],
-          color: "secondary",
+          color: "primary",
         },
         {
           name: "Coders Club",
@@ -84,7 +84,7 @@ export function ClubsDirectory() {
           icon: <Globe className="h-6 w-6" />,
           members: "130+",
           activities: ["Android Development", "Web Development", "Cloud Computing", "AI/ML Projects"],
-          color: "secondary",
+          color: "primary",
         },
         {
           name: "Engineering India",
@@ -133,7 +133,7 @@ export function ClubsDirectory() {
           icon: <Award className="h-6 w-6" />,
           members: "100+",
           activities: ["Mentorship Programs", "STEM Workshops", "Professional Networking", "Career Development"],
-          color: "secondary",
+          color: "primary",
         },
         {
           name: "UBA (Unnat Bharat Abhiyan)",

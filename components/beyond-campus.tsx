@@ -8,7 +8,7 @@ export function BeyondCampus() {
       title: "International Robotics Championship",
       level: "International",
       description:
-        "Team CCEW secured 3rd position in the World Robotics Championship held in Singapore, competing against 150+ teams globally.",
+        "Team CCOEW secured 3rd position in the World Robotics Championship held in Singapore, competing against 150+ teams globally.",
       students: "5 Students",
       year: "2023",
       category: "Technical",
@@ -35,7 +35,7 @@ export function BeyondCampus() {
       year: "2023",
       category: "Cultural",
       icon: <Trophy className="h-6 w-6" />,
-      color: "secondary",
+      color: "primary",
     },
     {
       title: "Inter-College Sports Championship",
@@ -68,7 +68,7 @@ export function BeyondCampus() {
       year: "2023",
       category: "Social Service",
       icon: <Trophy className="h-6 w-6" />,
-      color: "secondary",
+      color: "primary",
     },
   ]
 
@@ -91,7 +91,7 @@ export function BeyondCampus() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4">Beyond Campus Achievements</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our students excel beyond college boundaries, representing CCEW at state, national, and international levels
+            Our students excel beyond college boundaries, representing CCOEW at state, national, and international levels
           </p>
         </div>
 

@@ -33,7 +33,7 @@ export function StudentSpotlight() {
       category: "Sports",
       icon: <Star className="h-5 w-5" />,
       image: "/placeholder.svg?height=200&width=200",
-      color: "secondary",
+      color: "primary",
     },
     {
       name: "xyz",

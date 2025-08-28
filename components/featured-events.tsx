@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Users, ExternalLink } from "lucide-react"
@@ -13,6 +14,7 @@ export function FeaturedEvents() {
       image: "/college-cultural-festival.png",
       highlights: ["Technical Competitions", "Cultural Performances", "Guest Lectures", "Food Festival"],
       color: "primary",
+      link: "/events/annanya-fest-2024", // internal
     },
     {
       title: "Dahi Handi Celebration",
@@ -23,6 +25,7 @@ export function FeaturedEvents() {
       image: "/dahi-handi-students.png",
       highlights: ["Human Pyramids", "Traditional Music", "Cultural Unity", "Prize Distribution"],
       color: "accent",
+      link: "https://external-site.com/dahi-handi", // external
     },
     {
       title: "Umang - Garba Night",
@@ -33,6 +36,7 @@ export function FeaturedEvents() {
       image: "/placeholder-40z0a.png",
       highlights: ["Traditional Garba", "Costume Competition", "Live Music", "Cultural Exchange"],
       color: "secondary",
+      link: "/events/garba-night", // internal
     },
   ]
 
@@ -42,7 +46,7 @@ export function FeaturedEvents() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4">Signature Events</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the magic of our most celebrated festivals and events that define the spirit of CCEW
+            Experience the magic of our most celebrated festivals and events that define the spirit of CCOEW
           </p>
         </div>
 
@@ -64,8 +68,8 @@ export function FeaturedEvents() {
                       event.color === "primary"
                         ? "bg-primary text-primary-foreground"
                         : event.color === "accent"
-                          ? "bg-accent text-accent-foreground"
-                          : "bg-secondary text-secondary-foreground"
+                        ? "bg-accent text-accent-foreground"
+                        : "bg-secondary text-secondary-foreground"
                     }`}
                   >
                     Featured
@@ -105,10 +109,26 @@ export function FeaturedEvents() {
                   </div>
                 </div>
 
-                <Button className="w-full group">
-                  Learn More
-                  <ExternalLink className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                {event.link.startsWith("/") ? (
+                  <Link href={event.link}>
+                    <Button className="w-full group">
+                      Learn More
+                      <ExternalLink className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                ) : (
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Button className="w-full group">
+                      Learn More
+                      <ExternalLink className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}
@@ -117,3 +137,4 @@ export function FeaturedEvents() {
     </section>
   )
 }
+
